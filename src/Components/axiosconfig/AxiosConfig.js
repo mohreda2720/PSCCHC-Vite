@@ -2,7 +2,7 @@ import axios from "axios";
 
 const axiosConfig = axios.create({
     // withCredentials: true,
-     baseURL: "https://pscchcit-001-site1.atempurl.com/api",
+     baseURL: "http://pscchcit-001-site1.atempurl.com/api",
     // baseURL: "http://localhost:5016/api",
     auth: {
         Username: "11192089",
