@@ -1,0 +1,57 @@
+.ScrollToTopBtn {
+    width: 45px;
+    height: 45px;
+    /* background: linear-gradient(#44ea76, #39fad7); */
+    /* background: linear-gradient(to right, #2A324A, #004d7a, #008793); */
+    /* background: linear-gradient(to right, #082653, #004d7a, #008793, #00bf72); */
+    background-color: #008793;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    bottom: 1.5dvh;
+    right: 1.3dvw;
+    border: none;
+    z-index: 100;
+}
+
+
+.ArrowIcon path {
+    fill: white;
+}
+
+.ScrollToTopText {
+    font-size: 0.7em;
+    width: 100px;
+    position: absolute;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -18px;
+    opacity: 0;
+    transition-duration: .7s;
+}
+
+.ScrollToTopBtn:hover .ScrollToTopText {
+    opacity: 1;
+    transition-duration: .7s;
+}
+
+.ScrollToTopBtn:hover .ArrowIcon {
+    animation: slide-in-bottom .7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-bottom {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

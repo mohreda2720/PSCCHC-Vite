@@ -1,0 +1,20 @@
+.news_slider2 {
+    background-size: cover;
+}
+
+.carousel-image-container {
+    position: relative;
+    border-radius: "50px";
+}
+
+.carousel-overlay {
+    position: absolute;
+    
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    padding: 10px; /* Adjust as needed */
+}
+
+

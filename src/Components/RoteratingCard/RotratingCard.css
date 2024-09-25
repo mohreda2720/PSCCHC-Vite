@@ -1,0 +1,97 @@
+.cardBox {
+  float: left;
+  font-size: 0.4em;
+  margin: 1% 0 0 1%;
+  perspective: 800px;
+  transition: all 0.5s;
+  width: 32%;
+}
+
+#about {
+  background: url("/images/about-bg.jpg") center top no-repeat fixed;
+  background-size: cover;
+  padding: 60px 0 40px 0;
+  position: relative;
+}
+.cardBox:hover .cardret {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+.cardret:hover .front {
+  height: 0px;
+  opacity: 0;
+}
+.cardret {
+  cursor: default;
+  height: 480px;
+  transform-style: preserve-3d;
+  /* transition: all 0.5s ; */
+  width: 100%;
+  -webkit-animation: giro 1s 1;
+  animation: giro 1s 1;
+  border-radius: 20px;
+}
+.cardret p {
+  margin-top: 30px;
+  font-size: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cardret h3 {
+  margin-top: 20px;
+}
+
+.cardret .front,
+.cardret .back {
+  border-radius: 20px;
+
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  color: white;
+  display: block;
+  font-size: 1.2em;
+  height: 90%;
+  padding: 0.8em;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.cardret .back {
+  transform: rotateY(180deg);
+  height: 80%;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+
+.cardBox .cardret .back {
+  background: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72);
+}
+
+@media screen and (max-width: 767px) {
+  .cardBox {
+    margin-left: 2.8%;
+    margin-top: 3%;
+    width: 46%;
+  }
+  .cardret {
+    height: 285px;
+  }
+  .cardBox:last-child {
+    margin-bottom: 3%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cardBox {
+    width: 94.5%;
+  }
+  .cardret {
+    height: 260px;
+  }
+}

@@ -1,0 +1,91 @@
+.masked-title{
+  background: url('/images/meshgifs/giphy1.gif');
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  font-size: 4.2rem;
+  user-select: none;
+}
+.Hero {
+  position: relative;
+  width: 100%;
+  padding: 5%;
+  height: 100%;
+}
+
+.Hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-size: cover;
+  transform: scaleX(-1);
+  background-position: center;
+}
+
+.flex-reverse {
+  flex-direction: row-reverse;
+}
+
+.Hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-left: -4px;
+  /* background: linear-gradient(to right, #082653, #004d7a, #008793, #00bf72); */
+
+  background: linear-gradient(to right, #2A324A, #004d7a, #008793);
+
+
+  opacity: 0.5;
+}
+
+
+.Hero .row {
+  position: relative;
+  z-index: 1;
+}
+
+.Hero p {
+  text-align: justify;
+  line-height: 2em;
+}
+
+.Hero h1 {
+  text-align: start;
+}
+.container-fluid.facts {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.superShadow {
+  text-shadow:     0 1px 0 hsl(174,5%,80%),
+	                 0 2px 0 hsl(174,5%,75%),
+	                 0 3px 0 hsl(174,5%,70%),
+	                 0 4px 0 hsl(174,5%,66%),
+	                 0 5px 0 hsl(174,5%,64%),
+	                 0 6px 0 hsl(174,5%,62%),
+	                 0 7px 0 hsl(174,5%,61%),
+	                 0 8px 0 hsl(174,5%,60%),
+
+	                 0 0 5px rgba(0,0,0,.05),
+	                0 1px 3px rgba(0,0,0,.2),
+	                0 3px 5px rgba(0,0,0,.2),
+	               0 5px 10px rgba(0,0,0,.2),
+	              0 10px 10px rgba(0,0,0,.2),
+	              0 20px 20px rgba(0,0,0,.3);
+}

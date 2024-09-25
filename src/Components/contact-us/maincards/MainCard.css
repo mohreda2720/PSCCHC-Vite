@@ -1,0 +1,103 @@
+#trainers .trainer-item {
+    background-color: #fff;
+    border-radius: 5px;
+    /* overflow: visible; */
+    display: flex;
+    margin: 0 auto;
+padding-left: 1px;
+   -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222)  ;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    max-height: 250px;
+    backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+}
+ 
+.trainer-item:hover > :not(:hover) {
+  opacity: 0.9;
+
+}
+
+  #trainers .trainer-item img {
+    width: 150px;
+    height: 180px;
+    margin-left: 20px;
+    margin-right: 20px;  
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+}
+  
+  #trainers .trainer-item span {
+    justify-content: center;
+    margin-right: 5px;
+    font-size: 12px;
+    font-weight: 800;
+    color: rgba(1, 30, 46, 0.548);
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    /* max-height: 30px; */
+  }
+  
+  #trainers .trainer-item h4 {
+    margin-right: 2px;
+
+    font-size: 19px;
+    font-weight: 600;
+    color: #232d39;
+    letter-spacing: 0.5px;
+    margin-bottom: 18px;
+  }
+  
+  #trainers .trainer-item p {
+    margin-bottom: 20px;
+    font-size: 15px;
+
+  }
+  
+  #trainers .trainer-item ul.social-icons li {
+    display: inline-block;
+    margin-right: 12px;
+  }
+  
+  #trainers .trainer-item ul.social-icons li:last-child {
+    margin-right: 0px;
+  }
+  
+  #trainers .trainer-item ul.social-icons li a {
+    color: #232d39;
+    transition: all .3s;
+  }
+  
+  #trainers .trainer-item ul.social-icons li a:hover {
+    color:#0b0379;
+  }
+/* .social-icons{
+  margin-top: 65px;
+} */
+ .down-content{
+  margin-top: 25px;
+ }
+
+ .mySwiper {
+  width: 94%;
+  height: 100%;
+}
+@media (min-width: 1024px) {
+  .mySwiper {
+    width: 90%; /* Adjust for larger screens */
+  }
+}
+
+
+
+
+

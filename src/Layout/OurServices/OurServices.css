@@ -1,0 +1,356 @@
+.ServicesCardContainer {
+  padding: 2% 0 2% 0;
+}
+
+.ServiceIcon {
+  padding: 1%;
+}
+
+.buttonColor {
+  background-color: rgb(0, 0, 14);
+  color: white;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.ServiceHero {
+  width: 100%;
+  /* background-image: url("/public/images/about-mission2.jpg"); */
+  background-size: cover;
+  background-position: right top;
+  padding: 10%;
+  height: 20%;
+}
+
+.ServiceCard {
+  border-radius: 5px;
+  padding: 2%;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+.ServiceCardBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*background-image:;
+  url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExemo2cThxMzJreTZoeGZrZzlqdjE4aGYwNnNwOGh6d3Jld2xka3F3cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/aRZ4vTsHnyW6A/giphy.gif');
+  */background-size: cover;
+  background-position: center;
+  z-index: -1;
+  /*Createanoverlaywithdarknesseffect*/
+  transition: opacity 1s ease-in-out;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+}
+.ServiceCardBackground::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black color */
+}
+
+.ServiceCard:hover {
+  cursor: pointer;
+}
+
+.ServiceCard:hover .ServiceCardBackground {
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+
+.ServiceContent {
+  text-shadow: 2px 2px 1px #000000;
+}
+
+.TabsMenuBox {
+  text-align: left;
+  align-items: start;
+}
+
+.PanelContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Ensure the accordion items have a position set for z-index to work */
+.accordion-item {
+  position: relative; /* Ensure a stacking context */
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.4);
+  margin-bottom: 1%;
+}
+
+/* Adjust the accordion body styles */
+.accordion-body {
+  position: relative; /* Ensure a stacking context */
+  z-index: 1; /* Ensure the body is above the header */
+  border-left: 7px solid #004d7a !important;
+  overflow: hidden;
+}
+
+/* Increase the z-index of the collapsed content */
+.accordion-collapse {
+  position: relative; /* Ensure a stacking context */
+  z-index: 1; /* Ensure it's above other content */
+}
+
+/* Adjusted styles for accordion buttons */
+.accordion-button {
+  background: #ffffff !important;
+  border-radius: 0 !important;
+  border-left: 7px solid #004d7a !important;
+  font-weight: bold;
+  font-size: large;
+}
+
+/* Styles for focused and hovered accordion buttons */
+.accordion-button:focus,
+.accordion-button:hover {
+  box-shadow: none;
+  background: rgb(215, 215, 215) !important;
+}
+
+/* Styles for expanded accordion buttons */
+.accordion-button:not(.collapsed) {
+  color: #212529;
+}
+
+
+.cookieCard {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(to right, #f0f0f0, #dddddd);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+
+.cookieCard::after {
+  width: 250px;
+  height: 250px;
+  content: "";
+  background: linear-gradient(to right, #f0f0f0ad, #ddddddb2);
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  right: -25%;
+  top: -25%;
+}
+
+.cookieCard::before {
+  width: 250px;
+  height: 250px;
+  content: "";
+  background: linear-gradient(to right, #f5f5f5a8, #ddddddab);
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  left: -25%;
+  bottom: -25%;
+}
+
+.cookieHeading {
+  font-size: 1.5em;
+  z-index: 2;
+  font-weight: bold;;
+}
+
+.cookieHeadingContainer{
+  color: #008793;
+}
+
+.cookieDescription {
+  /* font-size: 0.9em; */
+  color: #000000;
+  z-index: 2;
+}
+
+
+.maintenanceCard {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 3%;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  background-color: white;
+}
+
+.maintenanceContent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: 100;
+}
+
+@media (max-width: 768px) {
+  .maintenanceContent {
+    display: block;
+  }
+}
+
+.maintenanceContent .maintenanceHeading {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.maintenanceContent .maintenancePara {
+  line-height: 1.5;
+}
+
+.maintenanceCard::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, #082653, #004d7a, #008793, #00bf72);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.maintenanceCard:hover::before {
+  height: 100%;
+}
+
+.maintenanceCard:hover {
+  color: #f0f0f0;
+  box-shadow: none;
+}
+
+.inlandContent *{
+  margin-bottom: 15px;
+  list-style: none;
+  text-decoration: none;
+  list-style-type: none;
+}
+.MapBlock {
+  width: 100%;
+  background: url("/images/about-bg.jpg") center top no-repeat fixed;
+  background-size: cover;
+  padding: 40px 0 40px 0;
+  position: relative;
+  /* Ensure this element has a higher z-index than ::before */
+  z-index: 12 !important;
+}
+
+.MapBlock::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.92);
+  z-index: 0; /* Lower z-index than .MapBlock */
+}
+
+.MapBlockContent {
+  position: relative;
+  z-index: 10; /* Ensure content appears above the overlay */
+
+}
+.MapBlockContent video{
+  width: 100%;
+}
+
+.DiscoverLocation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.DiscoverMap {
+  width: 100%;
+  height: 100%;
+}
+
+.LocationLoader {
+  width: 44.8px;
+  height: 44.8px;
+  transform: rotate(45deg);
+  margin-right: 10px; /* Adjust spacing between icon and text */
+  position: relative; /* Ensure pseudo-elements position relative to this */
+}
+
+.LocationLoader:before,
+.LocationLoader:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50% 50% 0 50%;
+  background: #0000;
+  background-image: radial-gradient(circle 11.2px at 50% 50%, #0000 94%, #ff4747);
+}
+
+.LocationLoader:after {
+  animation: pulse-ytk0dhmd 1s infinite;
+  transform: perspective(336px) translateZ(0px);
+}
+
+@keyframes pulse-ytk0dhmd {
+  to {
+    transform: perspective(336px) translateZ(168px);
+    opacity: 0;
+  }
+}
+
+.locationSection {
+  text-align: left;
+}
+
+.RightToLeftAlign{
+  text-align: justify;
+  direction: rtl;
+}
+.IncreasedFontSize{
+  font-size: 20px !important;
+}
+
+
+
+.yardBackgroundImage {
+  width: 100%;
+  background: url("/images/about-plan2.jpg") center top no-repeat fixed;
+  background-size: cover;
+  padding: 40px 0 40px 0;
+  position: relative;
+  z-index: 12 !important;
+}
+
+.yardBackgroundImage::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.92);
+  z-index: 0; /* Lower z-index than .MapBlock */
+}
+.ServicesAllBoxSize button{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+}

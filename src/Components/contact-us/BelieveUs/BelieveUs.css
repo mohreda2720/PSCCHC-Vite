@@ -1,0 +1,28 @@
+.BeliveCard {
+  cursor: pointer;
+  transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: rgba(100, 100, 111, 0.05) 0px 7px 29px 0px;
+  border-width: 5px;
+}
+.hd {
+  font-size: 25px;
+  font-weight: 550;
+}
+.BeliveCard:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+.BeliveImg {
+  margin-bottom: 35px;
+  /* -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222); */
+}
+.BeliveTitle {
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+.JustfiedParagraph {
+  /* text-align: justify; */
+  font-size: 1.2rem;
+  font-weight: 600;
+}

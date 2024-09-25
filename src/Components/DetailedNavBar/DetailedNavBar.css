@@ -1,0 +1,7 @@
+.listStyle {
+    list-style: none;
+}
+
+.listItem {
+    cursor: pointer;
+}

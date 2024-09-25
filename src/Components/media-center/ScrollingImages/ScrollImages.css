@@ -1,0 +1,11 @@
+.filter{
+    background: rgb(0,0,14);
+    color: #fff;
+    padding: 6px 46px;
+    text-transform: uppercase;
+    border: 2px solid transparent;;
+    font-size: 17px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}

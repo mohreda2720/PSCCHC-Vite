@@ -1,0 +1,93 @@
+.myClass {
+  color: white !important;
+}
+
+.myClass.active {
+  color: black !important;
+}
+
+#MyButton {
+  background-color: rgb(0, 0, 14);
+  color: white;
+}
+
+.glassyblurbg {
+  /*border: 1px solid rgba(255, 255, 255, 0.25);*/
+  /*border: 1px solid rgba(0, 0, 0, 0.25);*/
+  /*background-color: rgba(255, 255, 255, 0.20);*/
+  /*background-color: #08265350;*/
+  /* height: 100dvh; */
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+}
+
+/* Base button style */
+.centeredButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.BerthButton {
+  border: none;
+  width: 12em;
+  height: 4em;
+  border-radius: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: rgba(0, 0, 0, 0.336);
+  color: white;
+  cursor: pointer;
+  transition: all 450ms ease-in-out;
+}
+
+/* Hover state */
+.BerthButton:hover {
+  /* background: linear-gradient(0deg, #a47cf3, #683fea); */
+  /* box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+    inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 0px 4px rgba(255, 255, 255, 0.2), 0px 0px 180px 0px #9917ff; */
+
+  background: linear-gradient(to right, #004d7a, #008793, #00bf72);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+    inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 0px 4px rgba(255, 255, 255, 0.2), 0px 0px 180px 0px #00bf72;
+
+  transform: translateY(-2px);
+}
+
+/* Text style */
+.BerthButton .BerthText {
+  font-weight: 600;
+  color: white;
+  font-size: medium;
+}
+
+/* Sparkle animation */
+.BerthButton .BerthSparkle {
+  fill: #aaaaaa;
+  transition: all 800ms ease;
+}
+
+/* Hover effects for text and sparkle */
+.BerthButton:hover .BerthText {
+  color: white;
+}
+
+.BerthButton:hover .BerthSparkle {
+  fill: white;
+  transform: scale(1.2);
+}
+
+.IconButton {
+  cursor: pointer;
+  transition: 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.IconButton:hover {
+  background-color: #bebebe;
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+    0px 0px 180px 0px #00bf72;
+}

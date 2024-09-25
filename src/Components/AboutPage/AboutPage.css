@@ -1,0 +1,157 @@
+.justify-text {
+  text-align: left;
+}
+
+/* HERO */
+.AboutHero {
+  width: 100%;
+  background-image: url("/public/images/AboutBanner-min.jpg");
+  background-size: cover;
+  background-position: right top;
+  padding: 10%;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+}
+
+/* CHAIRMAN MSG */
+.chairman-msg-cover {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 40%, transparent 100%);
+  filter: brightness(0.75);
+}
+
+.msg-title {
+  top: -65vh;
+  position: relative;
+  z-index: 1;
+  font-weight: 900;
+  color: white;
+  text-shadow: 2px 2px 20px #000000;
+  pointer-events: none;
+}
+
+.section_container {
+  position: relative;
+  margin-top: -45vh;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  border-radius: 30px;
+  padding: 50px;
+  z-index: 1;
+}
+.about-page-paragraph{
+  font-size: 1.2rem !important;
+  text-align: justify;
+}
+
+/* CHAIRMAN MSG END */
+
+/* HERO END*/
+
+/* HISTORY */
+#about_history {
+  margin-bottom: 50px;
+  /* background: url("/public/images/History.png") center top no-repeat fixed; */
+  background-size: cover;
+  padding: 20px 0 20px 0;
+  position: relative;
+  z-index: -1;
+}
+
+#about_history::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.92);
+  /* White cover */
+  z-index: 1;
+}
+
+.hist-title-about {
+  position: relative;
+  z-index: 1;
+  /* Ensure the title is above the background image */
+}
+
+.HistCard {
+  background-color: rgb(238, 238, 238);
+  border: 1px solid rgba(0, 0, 0, 0.048);
+  border-radius: 15px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.HistCardsImage {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 30vh;
+  object-fit: cover;
+  border-radius: 5px;
+  -webkit-box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.418);
+  box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.39);
+}
+
+.HistCardsTitle {
+  height: 10%;
+}
+
+/* HISTORY END */
+
+/* CERTIFICATES */
+.certificates-section {
+  width: 100%;
+  padding-bottom: 60px;
+}
+
+.certificates-container {
+  padding: 1% 10% 1% 10%;
+}
+
+.certificate-item {
+  padding: 3px;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+}
+.certificate-item:hover{
+  scale: 1.5;
+  box-shadow: 0px 0px 30px 15px rgba(0, 0, 0, 0.315);
+  z-index: 1;
+}
+/* CERTIFICATES END */
+
+/* DIRECTORS */
+.DirectorsContainer {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.second {
+  height: 40vh;
+}
+
+.second .swiper-slide {
+  height: 50vh;
+  text-align: center;
+  /* background-color: aqua; */
+  border-radius: 20%;
+}
+
+.second .SwiperBoardImage {
+  height: 15vh;
+  width: 15vh;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* DIRECTORS END */

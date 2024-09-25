@@ -1,0 +1,34 @@
+.news_slider {
+    width: 100%;
+}
+
+.sideImage {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+.image-with-title {
+    position: relative;
+}
+
+.title-overlay {
+    position: absolute;
+    bottom: 10px;
+    /* Adjust this value to change the vertical position of the title */
+    left: 10px;
+    /* Adjust this value to change the horizontal position of the title */
+    color: black;
+    /* Title color */
+    font-size: 1rem;
+    /* Title font size */
+    background-color: rgba(255, 255, 255, 0.695);
+    /* Background color with opacity */
+    padding: 5px 10px;
+    /* Padding around the title */
+    max-height: 4em;
+    /* Adjust this value to set the maximum height for the h5 element (two lines) */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: wrap;
+}

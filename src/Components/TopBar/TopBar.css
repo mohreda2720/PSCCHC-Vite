@@ -1,0 +1,14 @@
+.topbar-top a {
+    text-decoration: none;
+}
+
+.topbar-top small {
+    color: black;
+    margin-right: 15px;
+}
+
+.topbar-top a,
+.search-form .form-control,
+.search-form .btn {
+    font-size: 0.8em;
+}

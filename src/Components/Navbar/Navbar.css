@@ -1,0 +1,306 @@
+.navItems {
+  list-style: none;
+}
+
+.NavbarStyle {
+  /* position: sticky; */
+  /* top: 0; */
+  /* left: 0; */
+  color: white;
+  /* width: 100%; */
+  /* background-color: rgb(0, 0, 14); */
+  /* background: linear-gradient(to right,rgb(0, 0, 0),rgb(0, 0, 15),rgb(0, 0, 30), rgb(0, 0, 50)); */
+  /* background: linear-gradient(to right, #082653, #004d7a, #008793, #00bf72); */
+
+
+  background: linear-gradient(to right, #2a324a, #004d7a, #008793);
+
+  /* background: transparent; */
+  /* background: linear-gradient(to right, #082653, #004d7a ); */
+  /* background-color: #000000; */
+  /* background: linear-gradient(to right, #082653, #004d7a, #008793); */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  z-index: 1001;
+}
+
+.NavbarStyle.scrolled {
+  background-color: white;
+  color: black;
+}
+
+.navbar .nav-link {
+  position: relative;
+}
+
+.navbar .nav-link:hover .nav-item .dropdown-menu {
+  display: block;
+}
+
+/* .dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 1000;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  background-color: black;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 0.25rem;
+} */
+.NavDropDownItems {
+  width: 500px;
+}
+
+.NavDropDownItems ::before {
+  position: absolute;
+  display: block;
+  content: "";
+  bottom: 100%;
+  left: 25px;
+  width: 7px;
+  height: 7px;
+  margin-bottom: -4px;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  background: white;
+  transform: rotate(45deg);
+  transition: all 0.4s ease-in-out;
+}
+
+/* navbar link */
+/* 
+.navbar-dark .navbar-nav .nav-link {
+  color: white !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: gray !important;
+} */
+
+/* navbar icons */
+
+.navbar-dark .navbar-nav .navbar-btn {
+  color: white !important;
+}
+
+.navbar-dark .navbar-nav .navbar-btn:hover {
+  color: gray !important;
+}
+
+.NavBarName {
+  text-decoration: none;
+}
+
+.hover-dropdown .dropdown-menu {
+  display: none;
+}
+.dropdown-menu a {
+  text-decoration: none;
+  padding-bottom: 15px;
+}
+
+.hover-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.contentt {
+  position: relative;
+  /* font-family: "Poppins", sans-serif; */
+  box-sizing: border-box;
+}
+
+#dropdown-item-d {
+  @media (max-width: 1200px) {
+    white-space: wrap !important;
+  }
+}
+
+.dropdown-item:active{
+  background-color: rgb(209, 209, 209);
+}
+
+/* @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+.contentt span {
+  color: white;
+  font-size: 1em;
+  position: absolute;
+  transform: translate(-0%, -50%);
+}
+.contentt span:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+
+.contentt span:nth-child(2) {
+  color: white;
+  opacity: 0.5;
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 60%,
+      16% 44%,
+      33% 40%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+} */
+
+.iconColor1 {
+  background: linear-gradient(35deg, #f5365c 0, #f56036 100%) !important;
+}
+.iconColor2 {
+  background: linear-gradient(35deg, #11cdef 0, #1171ef 100%) !important;
+}
+.iconColor3 {
+  background: linear-gradient(35deg, #2dce89 0, #2dcecc 100%) !important;
+}
+.iconColor4 {
+  background: linear-gradient(35deg, #5e72e4 0, #825ee4 100%) !important;
+}
+.iconColor5 {
+  background: linear-gradient(35deg, #8965e0 0, #bc65e0 100%) !important;
+}
+
+.NbarITemp {
+  color: white;
+  width: 20px;
+  height: 20px;
+  box-sizing: content-box;
+  font-size: 18px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  padding: 10px;
+}
+
+.bg-gradient-primary {
+  background: linear-gradient(35deg, #5e72e4 0, #825ee4 100%) !important;
+}
+
+.bg-gradient-secondary {
+  background: linear-gradient(35deg, #f4f5f7 0, #f4f4f7 100%) !important;
+}
+
+.bg-gradient-success {
+  background: linear-gradient(35deg, #2dce89 0, #2dcecc 100%) !important;
+}
+
+.bg-gradient-info {
+  background: linear-gradient(35deg, #11cdef 0, #1171ef 100%) !important;
+}
+
+.bg-gradient-warning {
+  background: linear-gradient(35deg, #fb6340 0, #fbb140 100%) !important;
+}
+
+.bg-gradient-danger {
+  background: linear-gradient(35deg, #f5365c 0, #f56036 100%) !important;
+}
+
+.bg-gradient-light {
+  background: linear-gradient(35deg, #adb5bd 0, #adaebd 100%) !important;
+}
+
+.bg-gradient-dark {
+  background: linear-gradient(35deg, #212529 0, #212229 100%) !important;
+}
+
+.bg-gradient-default {
+  background: linear-gradient(35deg, #172b4d 0, #1a174d 100%) !important;
+}
+
+.bg-gradient-white {
+  background: linear-gradient(35deg, #fff 0, white 100%) !important;
+}
+
+.bg-gradient-neutral {
+  background: linear-gradient(35deg, #fff 0, white 100%) !important;
+}
+
+.bg-gradient-darker {
+  background: linear-gradient(35deg, black 0, black 100%) !important;
+}
+
+.bg-gradient-blue {
+  background: linear-gradient(35deg, #5e72e4 0, #825ee4 100%) !important;
+}
+
+.bg-gradient-indigo {
+  background: linear-gradient(35deg, #5603ad 0, #9d03ad 100%) !important;
+}
+
+.bg-gradient-purple {
+  background: linear-gradient(35deg, #8965e0 0, #bc65e0 100%) !important;
+}
+
+.bg-gradient-pink {
+  background: linear-gradient(35deg, #f3a4b5 0, #f3b4a4 100%) !important;
+}
+
+.bg-gradient-red {
+  background: linear-gradient(35deg, #f5365c 0, #f56036 100%) !important;
+}
+
+.bg-gradient-orange {
+  background: linear-gradient(35deg, #fb6340 0, #fbb140 100%) !important;
+}
+
+.bg-gradient-yellow {
+  background: linear-gradient(35deg, #ffd600 0, #beff00 100%) !important;
+}
+
+.bg-gradient-green {
+  background: linear-gradient(35deg, #2dce89 0, #2dcecc 100%) !important;
+}
+
+.bg-gradient-teal {
+  background: linear-gradient(35deg, #11cdef 0, #1171ef 100%) !important;
+}
+
+.bg-gradient-cyan {
+  background: linear-gradient(35deg, #2bffc6 0, #2be0ff 100%) !important;
+}
+
+.bg-gradient-white {
+  background: linear-gradient(35deg, #fff 0, white 100%) !important;
+}
+
+.bg-gradient-gray {
+  background: linear-gradient(35deg, #8898aa 0, #888aaa 100%) !important;
+}
+
+.bg-gradient-gray-dark {
+  background: linear-gradient(35deg, #32325d 0, #44325d 100%) !important;
+}
